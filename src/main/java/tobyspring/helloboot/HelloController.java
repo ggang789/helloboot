@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Objects;
 
-@RequestMapping("/test")
+@RequestMapping("/hello")
 public class HelloController {
 
     private final HelloService helloService;
