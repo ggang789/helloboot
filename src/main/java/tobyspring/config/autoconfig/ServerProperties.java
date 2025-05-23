@@ -1,8 +1,8 @@
 package tobyspring.config.autoconfig;
 
-import tobyspring.config.MyAutoConfigurationProperties;
+import tobyspring.config.MyConfigurationProperties;
 
-@MyAutoConfigurationProperties(prefix = "server")
+@MyConfigurationProperties(prefix = "server")
 public class ServerProperties {
 
     private String contextPath;

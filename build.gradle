@@ -20,6 +20,7 @@ repositories {
 // ./gradlew dependencies --configuration compileClasspath 로 의존성을 확인할 수 있음
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework:spring-jdbc'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

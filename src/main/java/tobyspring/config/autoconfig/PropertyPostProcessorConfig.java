@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.core.env.Environment;
 import tobyspring.config.MyAutoConfiguration;
-import tobyspring.config.MyAutoConfigurationProperties;
+import tobyspring.config.MyConfigurationProperties;
 
 import java.util.Map;
 
@@ -18,7 +18,7 @@ public class PropertyPostProcessorConfig {
         return new BeanPostProcessor() {
             @Override
             public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-                MyAutoConfigurationProperties annotation = AnnotationUtils.findAnnotation(bean.getClass(), MyAutoConfigurationProperties.class);
+                MyConfigurationProperties annotation = AnnotationUtils.findAnnotation(bean.getClass(), MyConfigurationProperties.class);
                 if (annotation == null) {
                     return bean;
                 }
